@@ -1,0 +1,46 @@
+@use 'variaveis';
+@use 'header';
+@use 'hero';
+@use 'planos';
+@use 'footer';
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Bold.woff2);
+    font-weight: 700;
+}
+
+.txt-bg {
+    font-size: 48px;
+    color: variaveis.$mainBtn;
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Avenir, sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: variaveis.$bgColor;
+}
+
+.button {
+    background-color: variaveis.$mainBtn;
+    padding: 12px 12px;
+    font-size: 20px;
+    border-radius: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    color: variaveis.$txtBtn;
+    font-weight: bold;
+}

@@ -1,0 +1,39 @@
+@use 'variaveis';
+
+.planos__container {
+    max-width: 1400px; /* Limita a largura total da seção */
+    padding: 0 16px; /* Adiciona um espaçamento lateral */
+    padding-bottom: 40px;
+
+    h1 {
+        color: variaveis.$mainBtn;
+    }
+    
+    .card {
+        max-width: 360px; /* Define a largura máxima dos cards */
+        margin: 0 auto; /* Centraliza os cards dentro da coluna */
+        border: 1px solid #ddd;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        background-color: variaveis.$mainBtn;
+        color: variaveis.$txtBtn;
+
+        button {
+            background-color: variaveis.$bgColor;
+            color: variaveis.$mainBtn;
+            border: none;
+            transition: 0.6s;
+
+            &:hover {
+                background-color: variaveis.$txtBtn;
+            }
+        }
+    }
+    
+    .card:hover {
+        transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+    }
+}
+
+

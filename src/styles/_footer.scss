@@ -1,0 +1,13 @@
+@use 'variaveis';
+
+footer.footer {
+    background-color: variaveis.$secTxt;
+}
+
+footer a:hover {
+    color: #f8c94d; /* Destaque dos links ao passar o mouse */
+}
+
+footer .container {
+    padding: 0 15px; /* Certificando-se de que o conteúdo da área do footer esteja centralizado e com espaçamento adequado */
+}

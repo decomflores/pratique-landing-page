@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Days</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./src/img/logo.png" alt="">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a class="button" href="#">ASSINE AGORA</a>
+                </li>
+                <li class="header__links__item">
+                    <a class="button" href="#">LOGIN</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero__title text-center mb-4 txt-bg">Últimos Lançamentos</h1>
+            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+    
+                <!-- Slides -->
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <img src="./src/img/hero/old_man.png" class="d-block w-100" alt="Imagem de um homem idoso num jardim">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Green Paradise</h5>
+                            <p>Explore o paraíso natural e sua tranquilidade.</p>
+                        </div>
+                    </div>
+    
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <img src="./src/img/hero/song_writer.png" class="d-block w-100" alt="Imagem de uma mulher escrevendo uma canção">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Lyrics & Life</h5>
+                            <p>Descubra a beleza por trás das palavras.</p>
+                        </div>
+                    </div>
+    
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <img src="./src/img/hero/reality_show.png" class="d-block w-100" alt="Imagem de um grupo de pessoas em uma selva">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Jungle Falls</h5>
+                            <p>Uma aventura inesquecível nas profundezas da floresta.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Controles -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="planos">
+        <div class="planos__container mx-auto">
+            <h1 class="text-center mb-5 txt-bg">Nossos Planos de Assinatura</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="card text-center h-100">
+                        <img src="https://via.placeholder.com/100" class="card-img-top mx-auto mt-4" alt="Logo do Plano Básico" style="width: 100px; height: auto;">
+                        <div class="card-body">
+                            <h2 class="card-title">Plano Básico</h2>
+                            <p class="card-text">Ideal para quem está começando. Aproveite o essencial com o menor custo.</p>
+                            <button class="btn btn-primary">ASSINAR</button>
+                        </div>
+                        <div class="card-footer">
+                            <span class="fs-4 fw-bold">R$ 29,90/mês</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card text-center h-100">
+                        <img src="https://via.placeholder.com/100" class="card-img-top mx-auto mt-4" alt="Logo do Plano Intermediário" style="width: 100px; height: auto;">
+                        <div class="card-body">
+                            <h2 class="card-title">Plano Intermediário</h2>
+                            <p class="card-text">Perfeito para quem quer mais recursos e flexibilidade.</p>
+                            <button class="btn btn-primary">ASSINAR</button>
+                        </div>
+                        <div class="card-footer">
+                            <span class="fs-4 fw-bold">R$ 59,90/mês</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card text-center h-100">
+                        <img src="https://via.placeholder.com/100" class="card-img-top mx-auto mt-4" alt="Logo do Plano Premium" style="width: 100px; height: auto;">
+                        <div class="card-body">
+                            <h2 class="card-title">Plano Premium</h2>
+                            <p class="card-text">Acesso completo a todos os recursos e vantagens exclusivas.</p>
+                            <button class="btn btn-primary">ASSINAR</button>
+                        </div>
+                        <div class="card-footer">
+                            <span class="fs-4 fw-bold">R$ 99,90/mês</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer text-light py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Sobre o site -->
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-uppercase">Good Vibes</h5>
+                    <p>
+                        Assista aos melhores filmes e séries com a melhor qualidade. Entretenimento garantido para toda a família, com vibrações positivas!
+                    </p>
+                </div>
+    
+                <!-- Informações de Contato -->
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-uppercase">Contato</h5>
+                    <ul class="list-unstyled">
+                        <li>Endereço: Rua das Estrelas, 123</li>
+                        <li>Cidade: Cinepolis</li>
+                        <li>CEP: 12345-678</li>
+                        <li>Telefone: (11) 98765-4321</li>
+                        <li>Email: suporte@goodvibes.com</li>
+                    </ul>
+                </div>
+    
+                <!-- Links úteis -->
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-uppercase">Links úteis</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Sobre Nós</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Planos</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Ajuda</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <!-- Direitos Autorais -->
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Good Vibes. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./dist/js/main.js"></script>
+    <!-- Bootstrap Bundle com JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+@use 'variaveis';
+
+.hero {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+    overflow: hidden;
+    
+    &__title {
+        color: variaveis.$mainBtn;
+        padding-top: 24px;
+    }
+
+    &__content {
+        width: 400%;
+        height: auto;
+        display: flex;
+
+        &__slide {
+            width: 25%;
+            height: auto;
+            position: relative;
+            text-align: center;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        input {
+            display: none;
+        }
+
+        &__nav-manual {
+            position: absolute;
+            width: 100%;
+            margin-top: 35%;
+            justify-content: center;
+
+            .manual-btn {
+                border: 1px solid variaveis.$mainBtn;
+                padding: 10px;
+                border-radius: 100%;
+                cursor: pointer;
+                transition: 0.5s;
+            }
+
+            .manual-btn:not(last-child),.auto-btn:not(:last-child) {
+                margin-right: 10px;
+            }
+
+            .manual-btn:hover {
+                background-color: variaveis.$mainBtn;
+            }
+        }
+
+        &__nav-auto {
+            position: absolute;
+            width: 100%;
+            margin-top: 35%;
+            justify-content: center;
+            
+                    .nav-auto div {
+                        border: 1px solid variaveis.$mainBtn;
+                        padding: 10px;
+                        border-radius: 100%;
+                        cursor: pointer;
+                        transition: 0.5s;
+                    }
+        }
+
+    }
+}
